@@ -26,7 +26,7 @@ class _AllExpensesBodyState extends State<AllExpensesBody> {
                         ? setState(() {
                             indx = widget.list.indexOf(e);
                           })
-                        : null ;
+                        : null;
                   },
                   child: AllExpensesItem(
                       model: e, isActive: indx == widget.list.indexOf(e))),

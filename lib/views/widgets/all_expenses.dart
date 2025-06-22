@@ -16,12 +16,12 @@ class AllExpenses extends StatelessWidget {
         image: AppImages.imagesIncome,
         title: 'Income',
         date: 'April 2022',
-        price:  r'$20,129'),
+        price: r'$20,129'),
     ExpensesItemModel(
         image: AppImages.imagesExpenses,
         title: 'Expenses',
         date: 'April 2022',
-        price:  r'$20,129'),
+        price: r'$20,129'),
   ];
   @override
   Widget build(BuildContext context) {
