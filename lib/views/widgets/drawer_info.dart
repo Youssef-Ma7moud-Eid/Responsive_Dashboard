@@ -4,9 +4,12 @@ import 'package:responsive_dash_board/utils/app_styles.dart';
 
 class DrawerInfo extends StatelessWidget {
   const DrawerInfo(
-      {super.key, required this.image, required this.title, this.subtitle});
+      {super.key,
+      required this.image,
+      required this.title,
+      required this.subtitle});
   final String image, title;
-  final String? subtitle;
+  final String subtitle;
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -23,15 +26,12 @@ class DrawerInfo extends StatelessWidget {
           ),
         ),
         subtitle: FittedBox(
-          alignment: Alignment.centerLeft,
-          fit: BoxFit.scaleDown,
-          child: subtitle != null
-              ? Text(
-                  subtitle!,
-                  style: AppStyles.styleRegular12(context),
-                )
-              : null,
-        ),
+            alignment: Alignment.centerLeft,
+            fit: BoxFit.scaleDown,
+            child: Text(
+              subtitle,
+              style: AppStyles.styleRegular12(context),
+            )),
       ),
     );
   }
