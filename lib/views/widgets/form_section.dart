@@ -50,12 +50,12 @@ class FormsSection extends StatelessWidget {
         ),
         SizedBox(
           height: 24,
-        ), 
+        ),
         Row(
           children: [
             Expanded(
               child: CustomButton(
-                text: 'Send Money',
+                text: 'Add more details',
                 textcolor: Color(0XFF4DB7F2),
                 backgroundColor: Colors.transparent,
               ),
