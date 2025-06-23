@@ -30,7 +30,9 @@ class AllExpensesItem extends StatelessWidget {
                   isActive ? Colors.white.withOpacity(0.10000000000) : null,
               imagecolor: isActive ? Colors.white : null,
               model: model),
-          Expanded(flex: 4, child: SizedBox()),
+          SizedBox(
+            height: 15,
+          ),
           FittedBox(
             fit: BoxFit.scaleDown,
             alignment: Alignment.center,
@@ -43,7 +45,9 @@ class AllExpensesItem extends StatelessWidget {
                   : AppStyles.styleSemiBold16(context),
             ),
           ),
-          Expanded(child: SizedBox()),
+          SizedBox(
+            height: 8,
+          ),
           FittedBox(
             fit: BoxFit.scaleDown,
             alignment: Alignment.center,
@@ -56,7 +60,9 @@ class AllExpensesItem extends StatelessWidget {
                   : AppStyles.styleRegular14(context),
             ),
           ),
-          Expanded(flex: 2, child: SizedBox()),
+          SizedBox(
+            height: 16,
+          ),
           FittedBox(
             fit: BoxFit.scaleDown,
             alignment: Alignment.center,

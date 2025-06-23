@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/models/drawer_item_model.dart';
+import 'package:responsive_dash_board/models/user_info_model.dart';
 import 'package:responsive_dash_board/utils/app_images.dart';
 import 'package:responsive_dash_board/views/widgets/active_and_in_active_item.dart';
 import 'package:responsive_dash_board/views/widgets/drawer_info.dart';
@@ -25,9 +26,11 @@ class CustomDrawer extends StatelessWidget {
         slivers: [
           SliverToBoxAdapter(
             child: DrawerInfo(
-                image: AppImages.imagesAvatar3,
-                title: 'Lekan Okeowo',
-                subtitle: 'demo@gmail.com'),
+              model: UserInfoModel(
+                  image: AppImages.imagesAvatar3,
+                  title: 'Lekan Okeowo',
+                  subtitle: 'demo@gmail.com'),
+            ),
           ),
           SliverToBoxAdapter(
             child: SizedBox(
@@ -43,7 +46,7 @@ class CustomDrawer extends StatelessWidget {
                   child: SizedBox(
                     height: 20,
                   ),
-                  ),
+                ),
                 InActiveItem(
                   itemModel: DrawerItemModel(
                       image: AppImages.imagesSettings,
