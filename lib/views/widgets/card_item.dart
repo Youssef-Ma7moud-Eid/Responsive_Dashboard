@@ -9,10 +9,10 @@ class CardItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
-      aspectRatio: 420 / 215,
+      aspectRatio: 290 / 130,
       child: Container(
         margin: EdgeInsets.only(left: 10),
-        padding: EdgeInsets.only(top: 20, bottom: 27, left: 31, right: 24),
+        padding: EdgeInsets.only(top: 10, bottom: 5, left: 20, right: 25),
         decoration: ShapeDecoration(
           image: DecorationImage(
             image: AssetImage(AppImages.imagesCardBackground),
@@ -68,7 +68,7 @@ class CardItem extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 15,
+              height: 10,
             ),
             Flexible(
               child: FittedBox(

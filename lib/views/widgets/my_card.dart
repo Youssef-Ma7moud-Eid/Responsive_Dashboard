@@ -37,7 +37,7 @@ class _MyCardState extends State<MyCard> {
           ),
         ),
         SizedBox(
-          height: 20,
+          height: 10,
         ),
         CardPageView(
           pageController: pageController,
@@ -45,11 +45,8 @@ class _MyCardState extends State<MyCard> {
         SizedBox(
           height: 19,
         ),
-        Padding(
-          padding: const EdgeInsets.only(left: 10),
-          child: DotsIndicator(
-            currentindex: currentindex,
-          ),
+        DotsIndicator(
+          currentindex: currentindex,
         ),
       ],
     );

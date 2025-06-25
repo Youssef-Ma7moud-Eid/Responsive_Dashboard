@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/views/widgets/all_expenses_and_quick_section.dart';
 import 'package:responsive_dash_board/views/widgets/custom_drawer.dart';
-import 'package:responsive_dash_board/views/widgets/my_card.dart';
+import 'package:responsive_dash_board/views/widgets/my_card_and_transaction_section.dart';
 
 class DesktopLayout extends StatelessWidget {
   const DesktopLayout({super.key});
@@ -23,26 +23,17 @@ class DesktopLayout extends StatelessWidget {
         ),
         Expanded(
           flex: 2,
-          child: Container(
-            margin: EdgeInsets.only(top: 20),
-            padding: EdgeInsets.all(24),
-            decoration: ShapeDecoration(
-              color: Color(0XFFFFFFFF),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(12),
-              ),
-            ),
-            child: Column(
-              children: [
-                MyCard(),
-              ],
-            ),
-          ),
+          child: MyCardAndTransactionSection(),
         ),
       ],
     );
   }
 }
+
+
+
+
+
 
 class MyWidget extends StatelessWidget {
   const MyWidget({super.key});
