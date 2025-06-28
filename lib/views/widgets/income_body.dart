@@ -1,4 +1,7 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
+import 'package:responsive_dash_board/views/widgets/detailed_income_chart.dart';
 import 'package:responsive_dash_board/views/widgets/income_chart.dart';
 import 'package:responsive_dash_board/views/widgets/income_chart_detail.dart';
 
@@ -7,14 +10,22 @@ class IncomeBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Expanded(child: IncomeChart()),
-        Expanded(
-          child: IncomeChartDetail(),
-        ),
-      ],
-    );
+    double width = MediaQuery.sizeOf(context).width;
+    log(width.toString());
+    return width >= 1380
+        ? Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Expanded(child: IncomeChart()),
+              Expanded(
+                child: IncomeChartDetail(),
+              ),
+            ],
+          )
+        : Expanded(
+            child: Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: DetailedIncomeChart(),
+          ));
   }
 }
-

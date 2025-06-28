@@ -16,19 +16,13 @@ class IncomeItemDetails extends StatelessWidget {
           shape: OvalBorder(),
         ),
       ),
-      title: FittedBox(
-        fit: BoxFit.scaleDown,
-        child: Text(
-          model.title,
-          style: AppStyles.styleRegular16(context),
-        ),
+      title: Text(
+        model.title,
+        style: AppStyles.styleRegular16(context),
       ),
-      trailing: FittedBox(
-        fit: BoxFit.scaleDown,
-        child: Text(
-          model.value,
-          style: AppStyles.styleMedium16(context),
-        ),
+      trailing:   Text(
+        model.value,
+        style: AppStyles.styleMedium16(context),
       ),
     );
   }

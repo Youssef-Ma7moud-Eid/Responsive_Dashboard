@@ -16,7 +16,7 @@ class IncomeChartDetail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.center,   
       children: items
           .map(
             (e) => IncomeItemDetails(
