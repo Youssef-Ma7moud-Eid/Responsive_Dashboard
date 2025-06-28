@@ -9,23 +9,13 @@ class AllExpensesAndQuickSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomScrollView(
-      slivers: [
-        SliverFillRemaining(
-          hasScrollBody: false,
-          child: Column(
-            children: [
-              SizedBox(
-                height: 20,
-              ),
-              IntrinsicHeight(child: AllExpenses()),
-              SizedBox(
-                height: 24,
-              ),
-              Expanded(child: QuickInvoice()),
-            ],
-          ),
+    return Column(
+      children: [
+        IntrinsicHeight(child: AllExpenses()),
+        SizedBox(
+          height: 24,
         ),
+        Expanded(child: QuickInvoice()),
       ],
     );
   }

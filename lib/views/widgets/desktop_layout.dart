@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/views/widgets/all_expenses_and_quick_section.dart';
 import 'package:responsive_dash_board/views/widgets/custom_drawer.dart';
-import 'package:responsive_dash_board/views/widgets/my_card_and_transaction_section.dart';
+import 'package:responsive_dash_board/views/widgets/my_card_and_income_section.dart';
 
 class DesktopLayout extends StatelessWidget {
   const DesktopLayout({super.key});
@@ -16,30 +16,32 @@ class DesktopLayout extends StatelessWidget {
         ),
         Expanded(
           flex: 3,
-          child: AllExpensesAndQuickSection(),
-        ),
-        SizedBox(
-          width: 24,
-        ),
-        Expanded(
-          flex: 2,
-          child: MyCardAndTransactionSection(),
+          child: CustomScrollView(
+            slivers: [
+              SliverFillRemaining(
+                hasScrollBody: false,
+                child: Row(
+                  children: [
+                    Expanded(
+                        flex: 3,
+                        child: Padding(
+                          padding: const EdgeInsets.only(top: 20),
+                          child: AllExpensesAndQuickSection(),
+                        )),
+                    SizedBox(
+                      width: 24,
+                    ),
+                    Expanded(
+                      flex: 2,
+                      child: MycardAndIncomesection(),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
         ),
       ],
     );
-  }
-}
-
-
-
-
-
-
-class MyWidget extends StatelessWidget {
-  const MyWidget({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
   }
 }

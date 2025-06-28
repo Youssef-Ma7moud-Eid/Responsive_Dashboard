@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/views/widgets/my_card.dart';
-import 'package:responsive_dash_board/views/widgets/transaction_history_body.dart';
-import 'package:responsive_dash_board/views/widgets/transaction_history_header.dart';
+import 'package:responsive_dash_board/views/widgets/transaction_history.dart';
 
 class MyCardAndTransactionSection extends StatelessWidget {
   const MyCardAndTransactionSection({
@@ -20,19 +19,17 @@ class MyCardAndTransactionSection extends StatelessWidget {
         ),
       ),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           MyCard(),
           Divider(
             height: 24,
             color: Color(0XFFF1F1F1),
           ),
-          TransactionHistoryHeader(),
-          SizedBox(
-            height: 10,
-          ),
-          Expanded(child: TransactionHistoryBody()),
+          TransactionHistory(),
         ],
       ),
     );
   }
 }
+

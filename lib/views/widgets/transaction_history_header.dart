@@ -8,6 +8,7 @@ class TransactionHistoryHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         FittedBox(
           fit: BoxFit.scaleDown,
@@ -16,7 +17,6 @@ class TransactionHistoryHeader extends StatelessWidget {
             style: AppStyles.styleSemiBold20(context),
           ),
         ),
-        Expanded(child: SizedBox()),
         FittedBox(
           fit: BoxFit.scaleDown,
           child: Text(
