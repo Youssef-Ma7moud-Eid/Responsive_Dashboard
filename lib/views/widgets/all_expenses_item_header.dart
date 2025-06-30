@@ -13,7 +13,7 @@ class AllExpensesItemHeader extends StatelessWidget {
   final ExpensesItemModel model;
   final Color? imagebackground, imagecolor;
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) { 
     return Row(
       children: [
         CircleAvatar(
