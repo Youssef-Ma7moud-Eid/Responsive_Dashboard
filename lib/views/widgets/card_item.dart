@@ -33,53 +33,35 @@ class CardItem extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   spacing: 8,
                   children: [
-                    FittedBox(
-                      fit: BoxFit.scaleDown,
-                      child: Text(
-                        'Name card',
-                        style: AppStyles.styleRegular16(context).copyWith(
-                          color: Color(0XFFFFFFFF),
-                        ),
+                    Text(
+                      'Name card',
+                      style: AppStyles.styleRegular16(context).copyWith(
+                        color: Color(0XFFFFFFFF),
                       ),
                     ),
-                    FittedBox(
-                      fit: BoxFit.scaleDown,
-                      child: Text(
-                        'Syah Bandi',
-                        style: AppStyles.styleMedium20(context),
-                      ),
+                    Text(
+                      'Syah Bandi',
+                      style: AppStyles.styleMedium20(context),
                     ),
                   ],
                 ),
-                Flexible(child: SvgPicture.asset(AppImages.imagesGallery)),
+                SvgPicture.asset(AppImages.imagesGallery),
               ],
             ),
             Expanded(child: SizedBox()),
-            Flexible(
-              child: FittedBox(
-                alignment: Alignment.center,
-                fit: BoxFit.scaleDown,
-                child: Text(
-                  '0918 8124 0042 8129',
-                  style: AppStyles.styleSemiBold24(context).copyWith(
-                    color: Color(0XFFFFFFFF),
-                  ),
-                ),
+            Text(
+              '0918 8124 0042 8129',
+              style: AppStyles.styleSemiBold24(context).copyWith(
+                color: Color(0XFFFFFFFF),
               ),
             ),
             SizedBox(
               height: 10,
             ),
-            Flexible(
-              child: FittedBox(
-                alignment: Alignment.center,
-                fit: BoxFit.scaleDown,
-                child: Text(
-                  '12/20 - 124',
-                  style: AppStyles.styleRegular16(context).copyWith(
-                    color: Color(0XFFFFFFFF),
-                  ),
-                ),
+            Text(
+              '12/20 - 124',
+              style: AppStyles.styleRegular16(context).copyWith(
+                color: Color(0XFFFFFFFF),
               ),
             ),
           ],

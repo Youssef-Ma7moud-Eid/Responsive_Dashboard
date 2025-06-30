@@ -11,13 +11,13 @@ class IncomeBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.sizeOf(context).width;
-    log(width.toString());
     return width >= 1380
         ? Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Expanded(child: IncomeChart()),
               Expanded(
+                flex: 2,
                 child: IncomeChartDetail(),
               ),
             ],

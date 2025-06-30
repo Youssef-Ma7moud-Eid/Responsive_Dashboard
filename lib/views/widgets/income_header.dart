@@ -10,7 +10,7 @@ class IncomeHeader extends StatelessWidget {
     return Row(
       children: [
         Text(
-          'All Expenses',
+          'Income',
           style: AppStyles.styleSemiBold20(context),
         ),
         Expanded(child: SizedBox()),
