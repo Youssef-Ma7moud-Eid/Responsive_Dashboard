@@ -11,7 +11,7 @@ class AllExpensesItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+      padding: EdgeInsets.symmetric(horizontal: 10, vertical: 16),
       decoration: ShapeDecoration(
         color: isActive == true ? Color(0XFF4EB7F2) : Colors.white,
         shape: RoundedRectangleBorder(

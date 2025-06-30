@@ -11,8 +11,7 @@ class TextFormFieldS extends StatelessWidget {
       decoration: InputDecoration(
         fillColor: Color(0XFFFAFAFA),
         filled: true,
-        contentPadding:
-            EdgeInsets.only(left: 20, top: 20, bottom: 20, right: rightpadding),
+        contentPadding: EdgeInsets.all(20),
         hintText: hint ?? "USD",
         hintStyle: AppStyles.styleRegular16(context).copyWith(
           color: Color(0XFFAAAAAA),
