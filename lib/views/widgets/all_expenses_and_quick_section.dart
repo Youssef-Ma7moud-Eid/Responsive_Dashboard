@@ -11,7 +11,7 @@ class AllExpensesAndQuickSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        IntrinsicHeight(child: AllExpenses()),
+        AllExpenses(),
         SizedBox(
           height: 24,
         ),

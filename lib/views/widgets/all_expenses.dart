@@ -37,10 +37,8 @@ class AllExpenses extends StatelessWidget {
           SizedBox(
             height: 16,
           ),
-          Expanded(
-            child: AllExpensesBody(
-              list: list,
-            ),
+          AllExpensesBody(
+            list: list,
           ),
         ],
       ),
